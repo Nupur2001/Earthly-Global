@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap');
+
+:root {
+    --Logopink: #ce6957;
+    --LogoBrown: #513f27;
+    --LightPink: #ECB7A2;
+    --BtnText: #1C150D;
+    --LogoBg: #e9cfc2;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Gilda Display", serif;
+}
+
+section {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+/* Help Button */
+.helpBtn {
+    z-index: 1;
+    position: fixed;
+    top: 38rem;
+    right: 1rem;
+    padding: 1.2rem 2rem;
+    border: none;
+    border-radius: .5rem;
+    background-color: var(--Logopink);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.helpBtn:hover {
+    background-color: var(--LightPink);
+}
+
+a {
+    text-decoration: none;
+    color: var(--BtnText);
+}
+
+h1 {
+    color: var(--Logopink);
+    font-size: 2rem;
+    font-family: "Tenor Sans", sans-serif;
+}
+
+/* Navbar */
+li {
+    list-style-type: none;
+}
+
+.navbar a {
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    color: var(--BtnText);
+    transition: background-color .5s, color .5s;
+}
+
+.navbar a:hover:not(.logo-link) {
+    color: #fff;
+    background: var(--Logopink);
+    border-radius: 0.5rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header .navbar {
+    display: flex;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+.navbar .logo {
+    height: 5rem;
+}
+
+.navbar .menu-links {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.btn {
+    border: none;
+    padding: .9rem;
+    border-radius: .5rem;
+    background-color: var(--LightPink);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background-color: var(--Logopink);
+    color: #fff;
+}
+
+/* Hero/Banner */
+.hero {
+    background: url('https://cdn.pixabay.com/photo/2019/06/11/10/56/girl-4266712_1280.jpg') no-repeat center center/cover;
+    height: 80vh;
+    margin-top: 60px;
+    position: relative;
+}
+
+.hero-content {
+    position: absolute;
+    top: 50%;
+    left: 4rem;
+    transform: translateY(-50%);
+    max-width: 500px;
+}
+
+.hero-content h2 {
+    font-family: "Tenor Sans", sans-serif;
+    color: var(--Logopink);
+    margin-bottom: 1rem;
+    font-size: 2rem;
+}
+
+.hero-content p {
+    font-weight: 600;
+    text-align: left;
+    line-height: 1.5;
+    font-size: 1.2rem;
+    color: var(--BtnText);
+}
+
+.hero .btn {
+    margin-top: 1rem;
+    margin: 0.5rem;
+}
+
+/* Why Our Product */
+.chooseContainer {
+    text-align: center;
+    padding-right: 4rem;
+    padding-left: 4rem;
+}
+
+.chooseContent {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.chooseContainer h2 {
+    margin-top: 1rem;
+    color: var(--LogoBrown);
+}
+
+.chooseContainer p {
+    margin-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    text-align: justify;
+}
+
+.chooseContainer a {
+    color: var(--BtnText);
+}
+
+.chooseContainer .btn {
+    margin-top: 1rem;
+}
+
+/* Buy Our Product Section */
+.buyProductContainer {
+    border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.buyProductContainer h1 {
+    font-family: "Tenor Sans", sans-serif;
+    text-align: center;
+    color: var(--Logopink);
+    margin-bottom: 1rem;
+}
+
+.buyProductContainer img {
+    height: 15rem;
+    border-radius: 0.5rem;
+}
+
+.buyProduct {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.buyProduct p {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 1rem;
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+/* Newsletter Section */
+.space {
+    margin-top: 2rem;
+}
+
+.newsletter {
+    background: url('Assets/Images/newsletter earthly global.webp');
+    background-position: center;
+    background-size: cover;
+    padding: 7rem;
+    text-align: left;
+}
+
+.newsletter h3 {
+    font-size: 2rem;
+    color: var(--LogoBrown);
+}
+
+.newsletter form {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: flex-start;
+    margin: 1rem 0;
+    padding: 1rem;
+    border: none;
+}
+
+.newsletter form .box {
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    color: var (--LogoBrown);
+    margin-bottom: 1rem;
+}
+
+.newsletter form .btn {
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: .5rem;
+    background-color: var(--Logopink);
+}
+
+.newsletter form .btn:hover {
+    background-color: #D97971;
+}
+
+
+/* Footer */
+
+
+/* Footer Section */
+.footer .logo {
+    height: 7rem;
+}
+
+.footer {
+    margin-left: 1.5rem;
+}
+
+.footer .box-container {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+    padding: 1rem 0;
+    flex: 1 1 22rem;
+}
+
+.footer .box-container .box .share a {
+    padding: 0;
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    text-align: center;
+}
+
+.footer .box-container .box h3 {
+    font-size: 1.5rem;
+    color: black;
+}
+
+.footer .box-container .box p {
+    font-size: 1rem;
+    /* color: #666; */
+    padding: 0.7rem 0;
+}
+
+.footer .box-container .box .Links {
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .Links a {
+    display: block;
+    padding: .5rem 0;
+    font-size: 1rem;
+    /* color: #333; */
+}
+
+.footer .box-container .box .Links a:hover {
+    text-decoration: underline;
+    color: var(--green);
+}
+
+.footer p {
+    color: var(--BtnText);
+}
+
+.footer .policy {
+    display: block;
+    /* flex-wrap: wrap; */
+}
+
+.footer .policy a {
+    font-size: .2rem;
+
+}
+
+.credit {
+    text-align: center;
+    padding-bottom: 1rem;
+    color: var(--BtnText);
+}
