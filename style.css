@@ -921,7 +921,7 @@ main {
     color: black;
 }
 
-.popup-content h3 {
+.popup-content h2 {
     font-size: 2rem;
     text-align: center;
 }
@@ -930,14 +930,14 @@ main {
 .popup-content a,
 .popup-content li {
     font-size: 1rem;
-    color: black;
+    color: black !important;
 }
 
-.popup-content p:hover,
+/* .popup-content p:hover,
 .popup-content a:hover,
 .popup-content li {
     color: black !important;
-}
+} */
 
 .popup-content li {
     font-size: 1.4rem;
